@@ -47,8 +47,6 @@ export async function reverseGeoCode(coords) {
                 format: 'json',
             },
         });
-
-        console.log(response);
         const { address, lat: rLat, lng: rLon, place_id } = response.data;
         return {
             id: place_id,
